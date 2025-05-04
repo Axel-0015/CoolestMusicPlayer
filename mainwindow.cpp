@@ -23,6 +23,7 @@
 #include <QMediaMetaData>
 
 #include <QPainter>
+#include <QStandardPaths>
 
 #include <taglib/fileref.h>
 #include <taglib/mpegfile.h>
@@ -86,7 +87,8 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     //Loading music directory
-    m_musicDir = "/Users/axelli/Documents/Documents - Axel’s MacBook Air/QTProject/QTOnline/MusicPlayer/music/";
+    m_musicDir = QStringLiteral("/Users/axelli/Documents/Documents - Axel’s MacBook Pro/Project/QTProject/QTOnline/MusicPlayer/music/");
+
     loadAppointMusicDir(m_musicDir);
 
 
