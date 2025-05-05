@@ -26,3 +26,36 @@ A modern and stylish desktop music player built with **Qt 6**, featuring:
 
 <img width="926" alt="image" src="https://github.com/user-attachments/assets/20e0bfe5-b917-4eed-8ec5-2f2071f15c1e" />
 
+---
+
+##🔧 Technologies
+C++ / Qt 6
+
+QMediaPlayer / QAudioOutput
+
+TagLib (for album art metadata)
+
+---
+
+##📁 Setup
+Install Qt 6
+
+Install TagLib
+
+Clone this project
+
+Build in Qt Creator or use qmake from the terminal
+
+---
+
+##💡 Notes
+Place .mp3 music files into the music/ folder inside the project
+
+Cover image must be embedded into the MP3 file using ID3v2 APIC tag
+
+---
+
+##👨‍💻 Author
+Axel Li | GitHub @Axel-0015
+
+
