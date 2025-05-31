@@ -1,16 +1,21 @@
+#Adds the following Qt modules:
+#core: Core functionality (e.g., signals/slots, event loop, containers)
+#gui: Basic GUI elements
+#multimedia: Audio and video playback features
+#network: Networking capabilities
 QT       += core gui multimedia network
 
+#If using Qt 5 or newer, include the widgets module (needed for QMainWindow, QPushButton, etc.).
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
+#Sets the project to use the C++17 standard during compilation.
 CONFIG += c++17
 
+#Includes the header and library path for TagLib, a library for reading and editing audio metadata (e.g., MP3 tags like title, artist).
 INCLUDEPATH += /opt/homebrew/opt/taglib/include
 LIBS       += -L/opt/homebrew/opt/taglib/lib -ltag
 
-# You can make your code fail to compile if it uses deprecated APIs.
-# In order to do so, uncomment the following line.
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-
+#Source and Header Files
 SOURCES += \
     main.cpp \
     mainwindow.cpp
