@@ -298,7 +298,7 @@ void MainWindow::startPlayingMusic()
     m_rotationTimer->start(30);
 }
 
-// Handle next song
+// Handle prev song
 void MainWindow::handlePrevSlot()
 {
     int currentRow = ui->musicList->currentRow();
